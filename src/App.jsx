@@ -12,11 +12,11 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/test-git/about" element={<About />}/>
+        <Route path="test-git/about" element={<About />}/>
       </Routes>
 
       <div>
-        <Link to="/test-git/about">About</Link>
+        <Link to="test-git/about">About</Link>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
