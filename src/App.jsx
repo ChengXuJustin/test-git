@@ -2,8 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import {Link, Routes} from 'react-router-dom'
-import { Route} from 'react-router-dom'
+import {Link, Route, Routes} from 'react-router-dom'
 import About from './About'
 
 
@@ -13,11 +12,11 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/about" element={<About />}/>
-        <Route path="/opper" element={<About />}/>
+        <Route path="/test-git/about" element={<About />}/>
       </Routes>
 
       <div>
+        <Link to="/test-git/about">About</Link>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -26,7 +25,6 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <Link to="/test-git/about">About</Link>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
